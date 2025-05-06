@@ -14,6 +14,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'), // '@' を 'src' ディレクトリにエイリアスします
     },
   },
+  server: {
+    port: 3000, // ポート番号を指定
+    host: '0.0.0.0', // サーバーを外部アクセス可能に設定
+  },
   build: {
     outDir: 'build' // ビルド出力先を 'build' に設定
   }
