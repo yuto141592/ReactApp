@@ -15,8 +15,8 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000, // ポート番号を指定
-    host: '0.0.0.0', // サーバーを外部アクセス可能に設定
+    port: process.env.PORT || 4000, // PORT 環境変数を使用
+    host: '0.0.0.0', // 外部アクセス可能に設定
   },
   build: {
     outDir: 'build' // ビルド出力先を 'build' に設定
